@@ -1,0 +1,63 @@
+.chef_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.chef_image img {
+  width: 80%;
+}
+.chef_contant-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.chef_heading {
+  font-family: var(--font-base);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 180%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: var(--color-golden);
+}
+.chef_section-quote_img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.chef_section-quote_img img {
+  width: 43px;
+  height: 40px;
+  margin: 1rem 1rem 0 0;
+}
+.chef-sign {
+  margin: 2rem 0;
+}
+.chef-sign p {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: var(--color-golden);
+}
+.chef-sign img {
+  width: 7rem;
+  margin: 1.5rem 0;
+}
+@media screen and (max-width: 750px) {
+  .chef_section {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 420px) {
+  .chef_heading {
+    font-size: 31px;
+    line-height: 136%;
+  }
+}

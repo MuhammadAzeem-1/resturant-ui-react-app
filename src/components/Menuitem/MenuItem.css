@@ -1,0 +1,38 @@
+.menuitem_section_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.menuitem_section_items p {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+.menuItem_div {
+  background-color: var(--color-golden);
+  width: 5rem;
+  height: 1px;
+  margin: 0 1rem;
+}
+.menuItem-price p {
+  color: var(--color-white);
+}
+.menuItem_sub {
+  width: 100%;
+  margin-top: 0.2rem;
+  color: var(--color-white);
+}
+.menuItem_sub p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 175%;
+}

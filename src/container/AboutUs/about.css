@@ -1,0 +1,77 @@
+.section_about {
+  position: relative;
+}
+.about_G-img_overlay {
+  position: absolute;
+  inset: 0;
+}
+.about_G-img_overlay img {
+  width: 380px;
+  height: 350px;
+  z-index: 0;
+}
+.about_section-content {
+  width: 100%;
+  z-index: 2;
+}
+.about_section-InnerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: end;
+}
+.about_section-InnerContent_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+}
+.about_section-knife_img {
+  margin: 2rem 4rem;
+}
+.about_section-knife_img img {
+  height: 45rem;
+}
+.about_section-InnerContent h2,
+.about_section-InnerContent_2 h2 {
+  font-family: var(--font-base);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  /* or 83px */
+  color: var(--color-golden);
+  text-align: right;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+}
+.about_section-InnerContent button,
+.about_section-InnerContent_2 button {
+  margin-top: 2rem;
+}
+.about_section-InnerContent p,
+about_section-InnerContent_2 p {
+  margin: 1rem 0;
+}
+@media screen and (max-width: 900px) {
+  .about_section-content {
+    flex-direction: column;
+  }
+
+  .about_section-knife_img {
+    margin: 4rem 0;
+  }
+  .about_section-InnerContent,
+  .about_section-InnerContent_2 {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about_section-InnerContent h2,
+  .about_section-InnerContent_2 h2 {
+    font-size: 44px;
+    line-height: 130%;
+  }
+}

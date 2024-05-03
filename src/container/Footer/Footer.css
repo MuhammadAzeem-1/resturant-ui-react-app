@@ -1,0 +1,73 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+}
+.third {
+  display: flex;
+  flex-direction: column;
+}
+.second h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 130%;
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.header h4 {
+  font-style: normal;
+  font-family: var(--font-base);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: var(--color-gray);
+}
+.header p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #aaaaaa;
+}
+.app__footer-links_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.app__footer-links_icons svg {
+  margin: 10px;
+}
+.last {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 175%;
+  /* identical to box height, or 28px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  /* AAAAAA */
+
+  color: #aaaaaa;
+}

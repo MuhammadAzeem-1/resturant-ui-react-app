@@ -1,0 +1,112 @@
+li {
+  list-style: none;
+}
+
+.app__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-black);
+}
+.nav__image {
+  width: 10rem;
+}
+.nav__items {
+  display: flex;
+
+  align-items: center;
+}
+.nav__items li {
+  padding: 1rem;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: white;
+}
+.nav__items li:hover {
+  color: var(--color-gray);
+}
+
+.nav_login-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav_login-section div {
+  width: 1px;
+  height: 30px;
+  background-color: var(--color-gray);
+}
+.nav_login-section a {
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: 0.5s ease;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  color: white;
+}
+.nav_login-section a:hover {
+  border-bottom: 1px solid var(--color-golden);
+}
+.app__navbar-smallscreen {
+  display: none;
+}
+.app__navbar-smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-black);
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 5;
+}
+.app__navbar-smallscreen_overlay .overlay__close {
+  font-size: 27px;
+  color: var(--color-golden);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.app__navbar-smallscreen-links li {
+  margin: 2rem;
+  cursor: pointer;
+  color: var(--color-golden);
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--font-base);
+}
+.app__navbar-smallscreen-links li {
+  color: var(--color-white);
+}
+
+@media screen and (max-width: 1050px) {
+  .nav__items {
+    display: none;
+  }
+  .app__navbar-smallscreen {
+    display: flex;
+  }
+  .app__navbar {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .app__navbar {
+    justify-content: space-between;
+  }
+  .nav_login-section {
+    display: none;
+  }
+  .nav__image {
+    width: 7rem;
+  }
+}
